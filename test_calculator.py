@@ -36,7 +36,7 @@ class TestCalculator(unittest.TestCase):
     #     fill in code
 
     def test_logarithm(self):  # 3 assertions
-        assert calc.logarithm(10, 1000) == 3
+        assert calc.logarithm(10, 100) == 2
         assert calc.logarithm(10, 1000) == 3
         assert calc.logarithm(10, 10000) == 4
 
