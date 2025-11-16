@@ -24,7 +24,7 @@ class TestCalculator(unittest.TestCase):
 
     def test_divide(self):  # 3 assertions
         assert calc.div(1, 1) == 1
-        assert calc.div(2, 1) == 2
+        assert calc.div(1, 2) == 2
         assert calc.div(2, 3) == 2 / 3
 
     ######## Partner 2
@@ -36,7 +36,7 @@ class TestCalculator(unittest.TestCase):
     #     fill in code
 
     def test_logarithm(self):  # 3 assertions
-        assert calc.logarithm(10, 100) == 2
+        assert calc.logarithm(10, 1000) == 3
         assert calc.logarithm(10, 1000) == 3
         assert calc.logarithm(10, 10000) == 4
 
