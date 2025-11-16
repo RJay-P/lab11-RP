@@ -6,6 +6,12 @@ One function per operation, in order.
 """
 # First example
 import math
+def square_root(a):
+    raise ValueError if a < 0
+    math.sqrt(a) 
+
+def hypotenuse(a, b): 
+    math.hypot(a, b)
 
 def add(a, b): 
     return a + b
@@ -13,16 +19,19 @@ def add(a, b):
 def subtract(a, b): 
     return a - b
 
-def multiply(a, b): 
+def mul(a, b): 
     return a * b
 
-def divide(a, b): 
+def div(a, b): 
     raise ZeroDivisionError if a == 0 
     return b / a    
     
 def logarithm(a, b): 
-    return loga(b)
-    # use math library/raise ValueError
+    raise ValueError if b <= 0 
+    raise ValueError if a == 1
+    raise ValueError if a <=0
+    return math.log(a,b)
+    
 
-def exponent(a, b): 
-    return ab
+def exp(a, b): 
+    return a**b
