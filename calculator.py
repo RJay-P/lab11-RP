@@ -1,4 +1,5 @@
-
+# https://github.com/RJay-P/lab11-RP
+# Partner 1: Ray-Jay Peart
 # First example
 import math
 
